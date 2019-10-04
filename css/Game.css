@@ -1,0 +1,54 @@
+body {
+    background-color: green;
+}
+h1 {
+    text-align: center;
+}
+
+#start-button {
+    color:green;
+}
+
+#sports-button {
+    color: green;
+}
+
+#entertainment-button {
+    color: green;
+}
+
+#music-button {
+    color: green;
+}
+
+#geography-button {
+    color: green;
+}
+
+.categories {
+    text-align: center;
+}
+
+.start-page {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.sports-difficulty-level-choice {
+    text-align: center;
+}
+
+.entertainment-difficulty-level-choice {
+    text-align: center;
+}
+
+.music-difficulty-level-choice {
+    text-align: center;
+}
+
+.geography-difficulty-level-choice {
+    text-align: center;
+}
