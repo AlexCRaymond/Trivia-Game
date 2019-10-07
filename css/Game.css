@@ -92,3 +92,7 @@ h1 {
 #score {
     position: relative; top: -170px;
 }
+
+#answers {
+    color: black;
+}

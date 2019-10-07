@@ -57,31 +57,31 @@ $('#start-button').on('click', (e) => {
         addQuestion()
     }
 })
-let score = 0;
 
 
 const SportsEasyQuestions = [
+
     
     {
         question: "How many teams are in the NFL?",
         answers: ['10', '20', '28', '32'],
         rightAnswer: 3
     },
+
     {
-        question: "How many teams are in the NBA?",
-        answers: ['14', '44', '77', '32'],
+        question: "What does the term 'birdie' mean in golf?",
+        answers: ['One under par', 'One over par', 'Two under par', 'You killed a bird'],
+        rightAnswer: 0
+    },
+
+    {
+        question: "Which of the following athletes is incorrectly matched with his sport?",
+        answers: ['Michael Jordan - Basketball','Wayne Gretzky - Ice Hockey',
+            'Babe Ruth - Baseball','Muhammad Ali - Football'],
         rightAnswer: 3
-    }
+    },
+    
 ]
-
-
-// for (let i = 0; i < SportsEasyQuestions.length; i++) {
-// };
-// SportsEasyQuestions[0].question 
-
-// make a function that will pick a random question. think math.random 
-
-
 
 function addQuestion() {
     const random = Math.floor(Math.random() * SportsEasyQuestions.length)
@@ -93,6 +93,7 @@ function addQuestion() {
     $('button').on('click', e => {
         if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
             console.log('right!')
+            game.score++
         }
         $('#answers').text('')
         addQuestion()
