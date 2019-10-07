@@ -63,7 +63,6 @@ h1 {
     color: white;
     height: auto;
     width: 5rem;
-    border: 0.2rem solid black;
     display: flex;
     flex-direction: column;
     text-align:center;
@@ -76,4 +75,20 @@ h1 {
 
 .game-page {
     
+}
+
+#question-box {
+    margin: auto;
+    position: relative; 
+    color: white;
+    height: 5rem;
+    width: 35rem;
+    border: 0.1rem solid black;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+#score {
+    position: relative; top: -170px;
 }

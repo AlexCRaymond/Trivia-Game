@@ -36,6 +36,8 @@ $('#start-button').on('click', () => {
 
 const game = {
     time: 10,
+    score: '',
+
     setTimer() {
         const timer = setInterval(() => {
             const $clock = $('#clock')
@@ -51,9 +53,11 @@ const game = {
 
 $('#start-button').on('click', (e) => {
     if($(e.target).text() === "START"){
-        game.setTimer()  
+        game.setTimer()
+        addQuestion()
     }
 })
+let score = 0;
 
 
 const SportsEasyQuestions = [
@@ -62,11 +66,35 @@ const SportsEasyQuestions = [
         question: "How many teams are in the NFL?",
         answers: ['10', '20', '28', '32'],
         rightAnswer: 3
+    },
+    {
+        question: "How many teams are in the NBA?",
+        answers: ['14', '44', '77', '32'],
+        rightAnswer: 3
     }
 ]
 
 
-let score = 0;
-for (let i = 0; i < SportsEasyQuestions.length; i++) {
-};
-SportsEasyQuestions[0].question // accessing my first question
+// for (let i = 0; i < SportsEasyQuestions.length; i++) {
+// };
+// SportsEasyQuestions[0].question 
+
+// make a function that will pick a random question. think math.random 
+
+
+
+function addQuestion() {
+    const random = Math.floor(Math.random() * SportsEasyQuestions.length)
+    $('#question-box').text(SportsEasyQuestions[random].question)
+    for(let i = 0; i < SportsEasyQuestions[random].answers.length; i++) {
+        let li = `<li><button>${SportsEasyQuestions[random].answers[i]}</button></li>`
+        $('#answers').append(li)
+    }
+    $('button').on('click', e => {
+        if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
+            console.log('right!')
+        }
+        $('#answers').text('')
+        addQuestion()
+    })
+}
