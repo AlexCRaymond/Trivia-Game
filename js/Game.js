@@ -36,19 +36,37 @@ $('#start-button').on('click', () => {
 
 const game = {
     time: 10,
-    score: '',
-
+    timer: null,
+   
     setTimer() {
-        const timer = setInterval(() => {
+        this.timer = setInterval(() => {
             const $clock = $('#clock')
             this.time--
             $clock.text(`Timer: ${this.time}s`)
             if(this.time === 0){
-                console.log('hi')
-                clearInterval(timer)
+                clearInterval(this.timer)
             }
         }, 1000)
+    },
+
+    addQuestion() {
+        const random = Math.floor(Math.random() * SportsEasyQuestions.length)
+        $('#question-box').text(SportsEasyQuestions[random].question)
+        for(let i = 0; i < SportsEasyQuestions[random].answers.length; i++) {
+            let li = `<li><button>${SportsEasyQuestions[random].answers[i]}</button></li>`
+            $('#answers').append(li)
+        }
+        $('button').on('click', e => {
+            if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
+                console.log('right!')
+                clearInterval(game.timer)
+            }
+            $('#answers').text('')
+            addQuestion()
+       
+        })
     }
+
 }
 
 $('#start-button').on('click', (e) => {
@@ -61,7 +79,6 @@ $('#start-button').on('click', (e) => {
 
 const SportsEasyQuestions = [
 
-    
     {
         question: "How many teams are in the NFL?",
         answers: ['10', '20', '28', '32'],
@@ -84,6 +101,7 @@ const SportsEasyQuestions = [
 ]
 
 function addQuestion() {
+    
     const random = Math.floor(Math.random() * SportsEasyQuestions.length)
     $('#question-box').text(SportsEasyQuestions[random].question)
     for(let i = 0; i < SportsEasyQuestions[random].answers.length; i++) {
@@ -93,9 +111,22 @@ function addQuestion() {
     $('button').on('click', e => {
         if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
             console.log('right!')
-            game.score++
+            clearInterval(game.timer)
         }
         $('#answers').text('')
         addQuestion()
+   
     })
 }
+
+const sportsQuestions = {
+    easy: [
+        {
+
+        }
+    ]
+}
+
+const level = 'easy'
+
+sportsQuestions[level]
