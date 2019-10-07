@@ -48,25 +48,6 @@ const game = {
             }
         }, 1000)
     },
-
-    addQuestion() {
-        const random = Math.floor(Math.random() * SportsEasyQuestions.length)
-        $('#question-box').text(SportsEasyQuestions[random].question)
-        for(let i = 0; i < SportsEasyQuestions[random].answers.length; i++) {
-            let li = `<li><button>${SportsEasyQuestions[random].answers[i]}</button></li>`
-            $('#answers').append(li)
-        }
-        $('button').on('click', e => {
-            if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
-                console.log('right!')
-                clearInterval(game.timer)
-            }
-            $('#answers').text('')
-            addQuestion()
-       
-        })
-    }
-
 }
 
 $('#start-button').on('click', (e) => {
@@ -75,7 +56,6 @@ $('#start-button').on('click', (e) => {
         addQuestion()
     }
 })
-
 
 const SportsEasyQuestions = [
 
@@ -97,7 +77,6 @@ const SportsEasyQuestions = [
             'Babe Ruth - Baseball','Muhammad Ali - Football'],
         rightAnswer: 3
     },
-    
 ]
 
 function addQuestion() {
@@ -108,6 +87,7 @@ function addQuestion() {
         let li = `<li><button>${SportsEasyQuestions[random].answers[i]}</button></li>`
         $('#answers').append(li)
     }
+
     $('button').on('click', e => {
         if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
             console.log('right!')
@@ -115,7 +95,6 @@ function addQuestion() {
         }
         $('#answers').text('')
         addQuestion()
-   
     })
 }
 
