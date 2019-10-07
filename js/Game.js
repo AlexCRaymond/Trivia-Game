@@ -1,4 +1,4 @@
-$('#start-button').on('click', () => {
+$('#lets-go-button').on('click', () => {
     $('.start-page').attr('class','hide')
     $('.category-choosing-page').attr('class','start-page')
 })
@@ -23,6 +23,32 @@ $('#geography-button').on('click', () => {
     $('.geography-difficulty-choosing-page').attr('class', 'geography-difficulty-level-choice')
 })
 
+$('#sports-easy-button').on('click', () => {
+    $('.sports-difficulty-level-choice').attr('class','hide')
+    $('.sports-easy-questions-page').attr('class', 'sports-difficulty-level-choice')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const SportsEasyQuestions = [
 //     {
 //         question: "How many teams are in the NFL?",
@@ -35,3 +61,5 @@ $('#geography-button').on('click', () => {
 
 // for (let i = 0; i < SportsEasyQuestions.length; i++) {
 // };
+
+// SportsEasyQuestions[0].question // accessing my first question

@@ -1,3 +1,7 @@
+.hide {
+    display: none;
+}
+
 body {
     background-color: green;
 }
@@ -5,11 +9,15 @@ h1 {
     text-align: center;
 }
 
-#start-button {
+#lets-go-button {
     color:green;
 }
 
 #sports-button {
+    color: green;
+}
+
+#sports-easy-button {
     color: green;
 }
 
@@ -33,10 +41,6 @@ h1 {
     text-align: center;
 }
 
-.hide {
-    display: none;
-}
-
 .sports-difficulty-level-choice {
     text-align: center;
 }
@@ -51,4 +55,19 @@ h1 {
 
 .geography-difficulty-level-choice {
     text-align: center;
+}
+
+#clock {
+    margin: auto;
+    color: white;
+    height: auto;
+    width: 5rem;
+    border: 0.2rem solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#start-button {
+    color: green;
 }
