@@ -60,6 +60,7 @@ const game = {
     score: 0,
     category: null,
     difficulty: null,
+    
     setTimer() {
         this.timer = setInterval(() => {
             const $clock = $('#clock')
@@ -83,18 +84,17 @@ const spentQuestions = []
 
 
 function addQuestion() {
-    // if(questions[game.category][game.difficulty].length > 0)
-    if(sportsQuestions.easy.length > 0) {
-        const random = Math.floor(Math.random() * sportsQuestions.easy.length)
-        $('#question-box').text(sportsQuestions.easy[random].question)
+    if(questions[game.category][game.difficulty].length > 0) {
+        const random = Math.floor(Math.random() * questions[game.category][game.difficulty].length)
+        $('#question-box').text(questions[game.category][game.difficulty][random].question)
         
-        for(let i = 0; i < sportsQuestions.easy[random].answers.length; i++) {
-            let li = `<li><button>${sportsQuestions.easy[random].answers[i]}</button></li>`
+        for(let i = 0; i < questions[game.category][game.difficulty][random].answers.length; i++) {
+            let li = `<li><button>${questions[game.category][game.difficulty][random].answers[i]}</button></li>`
             $('#answers').append(li)
         }
         
         $('button').on('click', e => {
-            if(sportsQuestions.easy[random].answers.indexOf(e.target.innerText) === sportsQuestions.easy[random].rightAnswer) {
+            if(questions[game.category][game.difficulty][random].answers.indexOf(e.target.innerText) === questions[game.category][game.difficulty][random].rightAnswer) {
                 game.score+=1
                 $('#score').text(`Score: ${game.score}`)
                 console.log('right!')
@@ -104,8 +104,8 @@ function addQuestion() {
             game.time = 10;
             $("#clock").text(`Timer: ${game.time}s`);
             game.setTimer()
-            spentQuestions.push(sportsQuestions.easy[random].question)
-            sportsQuestions.easy.splice(random, 1)
+            spentQuestions.push(questions[game.category][game.difficulty][random].question)
+            questions[game.category][game.difficulty].splice(random, 1)
             addQuestion()
             
         })
