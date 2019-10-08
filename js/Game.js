@@ -82,40 +82,49 @@ const SportsEasyQuestions = [
 
 function addQuestion() {
     
-    const random = Math.floor(Math.random() * SportsEasyQuestions.length)
-    $('#question-box').text(SportsEasyQuestions[random].question)
-    
-    for(let i = 0; i < SportsEasyQuestions[random].answers.length; i++) {
-        let li = `<li><button>${SportsEasyQuestions[random].answers[i]}</button></li>`
-        $('#answers').append(li)
-    }
-    
-    $('button').on('click', e => {
-        if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
-            game.score+=1
-            $('#score').text(`Score: ${game.score}`)
-            console.log('right!')
-        }
-        $('#answers').text('')
-        clearInterval(game.timer)
-        game.time = 10;
-        $("#clock").text(`Timer: ${game.time}s`);
-        game.setTimer()
-        addQuestion()
+    if(SportsEasyQuestions.length > 0) {
+        const random = Math.floor(Math.random() * SportsEasyQuestions.length)
+        $('#question-box').text(SportsEasyQuestions[random].question)
         
-    })
-    spentQuestions.push(SportsEasyQuestions[random].question)
-    SportsEasyQuestions.splice(random, 1)
-}
-
-const sportsQuestions = {
-    easy: [
-        {
-
+        for(let i = 0; i < SportsEasyQuestions[random].answers.length; i++) {
+            let li = `<li><button>${SportsEasyQuestions[random].answers[i]}</button></li>`
+            $('#answers').append(li)
         }
-    ]
+        
+        $('button').on('click', e => {
+            if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
+                game.score+=1
+                $('#score').text(`Score: ${game.score}`)
+                console.log('right!')
+            }
+            $('#answers').text('')
+            clearInterval(game.timer)
+            game.time = 10;
+            $("#clock").text(`Timer: ${game.time}s`);
+            game.setTimer()
+            spentQuestions.push(SportsEasyQuestions[random].question)
+            SportsEasyQuestions.splice(random, 1)
+            addQuestion()
+            
+        })
+
+    }
 }
 
-const level = 'easy'
 
-sportsQuestions[level]
+
+
+
+
+
+// const sportsQuestions = {
+//     easy: [
+//         {
+
+//         }
+//     ]
+// }
+
+// const level = 'easy'
+
+// sportsQuestions[level]
