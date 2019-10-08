@@ -145,5 +145,92 @@ const questions = {
                 rightAnswer: 3
             }
         ]
+    },
+    
+    television: {
+        easy: [
+            {
+                question: "Stewie Griffin says?",
+                answers: ['Eat my shorts!','What the deuce?','Giggity!','To infinity and beyond!'],
+                rightAnswer: 1
+            },
+        ],
+
+        medium: [
+            {
+                question: "What movie earned Tom Hanks his third straight Oscar nomination, in 1996?",
+                answers: ['Apollo 13','Saving Private Ryan', 'Philadelphia', 'That Thing You Do'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "Who played the role of Chandler's father on Friends?",
+                answers: ['Anita Barone', 'Christina Pickles', 'Morgan Fairchild', 'Kathleen Turner'],
+                rightAnswer: 3
+            }
+        ],
+
+        hard: [
+            {
+                question: "Who was the first solo female host of the Academy Awards Ceremony?",
+                answers: ['Nicole Kidman','Whoopie Goldberg', 'Susan Sarandon', 'Meryl Streep'],
+                rightAnswer: 1
+           
+            },
+        ]
+    },
+
+    music: {
+        easy: [
+            {
+                question: "Janis Joplin, Jimi Hendrix, Jim Morrison, Kurt Cobain and Amy Winehouse were all what age when they died?",
+                answers: ['31','26','27','29'],
+                rightAnswer: 2
+            },
+        ],
+
+        medium: [
+            {
+                question: "How many strings does a violin have?",
+                answers: ['6', '4', '5', '8'],
+                rightAnswer: 1
+            },
+        ],
+
+        hard: [
+            {
+                question: "How is Robert Zimmerman better known?",
+                answers: ['Eric Clapton', 'Neil Young', 'George Harrison', 'Bob Dylan'],
+                rightAnswer: 3
+           
+            },
+        ]
+    },
+
+    geography: {
+        easy: [
+            {
+                question: "What is the capital of Florida?",
+                answers: ['Miami','Orlando','Tampa Bay','Tallahassee'],
+                rightAnswer: 3
+            },
+        ],
+
+        medium: [
+            {
+                question: "What's the longest river in the United States?",
+                answers: ['Mississippi', 'Missouri', 'Yukon', 'Rio Grande'],
+                rightAnswer: 1
+            },
+        ],
+
+        hard: [
+            {
+                question: "What river runs through Baghdad?",
+                answers: ['Jordan', 'Euphrates', 'Tigris', 'Karun'],
+                rightAnswer: 2
+           
+            },
+        ]
     }
 }
