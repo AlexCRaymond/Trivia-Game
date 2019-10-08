@@ -37,7 +37,8 @@ $('#start-button').on('click', () => {
 const game = {
     time: 10,
     timer: null,
-   
+    score: 0,
+
     setTimer() {
         this.timer = setInterval(() => {
             const $clock = $('#clock')
@@ -57,8 +58,8 @@ $('#start-button').on('click', (e) => {
     }
 })
 
+const spentQuestions = []
 const SportsEasyQuestions = [
-
     {
         question: "How many teams are in the NFL?",
         answers: ['10', '20', '28', '32'],
@@ -83,19 +84,28 @@ function addQuestion() {
     
     const random = Math.floor(Math.random() * SportsEasyQuestions.length)
     $('#question-box').text(SportsEasyQuestions[random].question)
+    
     for(let i = 0; i < SportsEasyQuestions[random].answers.length; i++) {
         let li = `<li><button>${SportsEasyQuestions[random].answers[i]}</button></li>`
         $('#answers').append(li)
     }
-
+    
     $('button').on('click', e => {
         if(SportsEasyQuestions[random].answers.indexOf(e.target.innerText) === SportsEasyQuestions[random].rightAnswer) {
+            game.score+=1
+            $('#score').text(`Score: ${game.score}`)
             console.log('right!')
-            clearInterval(game.timer)
         }
         $('#answers').text('')
+        clearInterval(game.timer)
+        game.time = 10;
+        $("#clock").text(`Timer: ${game.time}s`);
+        game.setTimer()
         addQuestion()
+        
     })
+    spentQuestions.push(SportsEasyQuestions[random].question)
+    SportsEasyQuestions.splice(random, 1)
 }
 
 const sportsQuestions = {

@@ -81,7 +81,7 @@ h1 {
     margin: auto;
     position: relative; 
     color: white;
-    height: 5rem;
+    height: auto;
     width: 35rem;
     border: 0.1rem solid black;
     display: flex;
