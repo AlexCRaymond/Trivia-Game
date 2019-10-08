@@ -8,9 +8,14 @@ $('.categories').on('click',(e) => {
     $('.start-page').attr('class','hide')
     $('.difficulty-choosing-page').attr('class','difficulty-level-choice')
     $('.difficulty-header').text(`Please select a difficulty level for the upcoming ${game.category} questions:`)
-
 })
 
+$(".difficulty-level-choice").on('click', (e) => {
+    game.difficulty = $(e.target).text().toLowerCase()
+    $('.difficulty-level-choice').attr('class', 'hide')
+    $('.get-ready-page').removeClass('hide')
+    // $('.game-page').attr('class', 'game-page')
+})
 
 
 // $('#sports-button').on('click', () => {
@@ -42,16 +47,11 @@ $('.categories').on('click',(e) => {
 //     $('.get-ready-page').attr('class', 'sports-difficulty-level-choice')
 // })
 
-// $('#start-button').on('click', () => {
-//     $('.sports-difficulty-level-choice').attr('class', 'hide')
-//     $('.game-page').attr('class', 'game-page')
-// })
-
-$(".difficulty-level-choice").on('click', (e) => {
-    game.difficulty = $(e.target).text().toLowerCase()
-    $('.difficulty-level-choice').attr('class', 'hide')
-    $('.game-page').attr('class', 'game-page')
+$('#start-button').on('click', () => {
+    $('.get-ready-page').attr('class', 'hide')
+    $('.game-page').removeClass('hide')
 })
+
 
 
 const game = {
@@ -60,7 +60,7 @@ const game = {
     score: 0,
     category: null,
     difficulty: null,
-    
+
     setTimer() {
         this.timer = setInterval(() => {
             const $clock = $('#clock')
@@ -196,7 +196,3 @@ const sportsQuestions = {
         }
     ]
 }
-
-// const level = 'easy'
-
-// sportsQuestions.easy.easy[level]
