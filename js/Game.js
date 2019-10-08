@@ -82,7 +82,6 @@ $('#start-button').on('click', (e) => {
 
 const spentQuestions = []
 
-
 function addQuestion() {
     if(questions[game.category][game.difficulty].length > 0) {
         const random = Math.floor(Math.random() * questions[game.category][game.difficulty].length)
@@ -109,7 +108,6 @@ function addQuestion() {
             addQuestion()
             
         })
-
     }
 }
 
@@ -121,78 +119,69 @@ const questions = {
                 answers: ['10', '20', '28', '32'],
                 rightAnswer: 3
             },
+
+            {
+                question: "What does the term 'birdie' mean in golf?",
+                answers: ['One under par', 'One over par', 'Two under par', 'You killed a bird'],
+                rightAnswer: 0
+            },
+            
+            {
+                question: "Which of the following athletes is incorrectly matched with his sport?",
+                answers: ['Michael Jordan - Basketball','Wayne Gretzky - Ice Hockey',
+                    'Babe Ruth - Baseball','Muhammad Ali - Football'],
+                rightAnswer: 3
+            },
+            
+            {
+                question: "Who has won more tennis grand slam titles, Venus Williams or Serena Williams?",
+                answers: ['Venus Williams','Serena Williams'],
+                rightAnswer: 1
+            
+            },
+        ],
+
+        medium: [
+            {
+                question: "How many NBA championships did Michael Jordan win with the Chicago Bulls?",
+                answers: ['4', '5', '6', '8'],
+                rightAnswer: 2
+            },
+            
+            {
+                question: "Which golf tournament did Tiger Woods win by 12 strokes in 1997 to record his first major championship win?",
+                answers: ['The Masters', 'The Open', 'The Players Championship', 'PGA Championship'],
+                rightAnswer: 0
+            },
+            
+            {
+                question: "What's the name of the 15 year old female breakout player of 2019?",
+                answers: ['Sloane Stephens', 'Naomi Osaka', 'Coco Gauff', 'Simona Halep'],
+                rightAnswer: 2
+            },
+            
+        ],
+
+        hard: [
+                
+            {
+                question: "Which is the only American Football team to go a whole season undefeated, including the Super Bowl?",
+                answers: ['Baltimore Colts', 'Miami Dolphins', 'St. Louis Rams', 'Tennessee Oilers'],
+                rightAnswer: 1
+            },
+            
+            {
+                question: "Which is the only team to play in every soccer World Cup tournament?",
+                answers: ['Brazil', 'Argentina', 'Spain', 'Liverpool'],
+                rightAnswer: 0
+            },
+            
+            {
+                question: "Which American Football team won the first two Super Bowls (in 1967 and 1968)?",
+                answers: ['Dallas Cowboys', 'Philadelphia Eagles', 'Cleveland Browns', 'Green Bay Packers'],
+                rightAnswer: 3
+            }
         ]
+
     }
-}
-
-const sportsQuestions = {
-    easy: [
-        {
-            question: "How many teams are in the NFL?",
-            answers: ['10', '20', '28', '32'],
-            rightAnswer: 3
-        },
-    
-        {
-            question: "What does the term 'birdie' mean in golf?",
-            answers: ['One under par', 'One over par', 'Two under par', 'You killed a bird'],
-            rightAnswer: 0
-        },
-    
-        {
-            question: "Which of the following athletes is incorrectly matched with his sport?",
-            answers: ['Michael Jordan - Basketball','Wayne Gretzky - Ice Hockey',
-                'Babe Ruth - Baseball','Muhammad Ali - Football'],
-            rightAnswer: 3
-        },
-
-        {
-            question: "Who has won more tennis grand slam titles, Venus Williams or Serena Williams?",
-            answers: ['Venus Williams','Serena Williams'],
-            rightAnswer: 1
-        
-        },
-    ],
-
-    medium: [
-        {
-            question: "How many NBA championships did Michael Jordan win with the Chicago Bulls?",
-            answers: ['4', '5', '6', '8'],
-            rightAnswer: 2
-        },
-
-        {
-            question: "Which golf tournament did Tiger Woods win by 12 strokes in 1997 to record his first major championship win?",
-            answers: ['The Masters', 'The Open', 'The Players Championship', 'PGA Championship'],
-            rightAnswer: 0
-        },
-
-        {
-            question: "What's the name of the 15 year old female breakout player of 2019?",
-            answers: ['Sloane Stephens', 'Naomi Osaka', 'Coco Gauff', 'Simona Halep'],
-            rightAnswer: 2
-        }
-
-    ],
-
-    hard: [
-        
-        {
-            question: "Which is the only American Football team to go a whole season undefeated, including the Super Bowl?",
-            answers: ['Baltimore Colts', 'Miami Dolphins', 'St. Louis Rams', 'Tennessee Oilers'],
-            rightAnswer: 1
-        },
-
-        {
-            question: "Which is the only team to play in every soccer World Cup tournament?",
-            answers: ['Brazil', 'Argentina', 'Spain', 'Liverpool'],
-            rightAnswer: 0
-        },
-
-        {
-            question: "Which American Football team won the first two Super Bowls (in 1967 and 1968)?",
-            answers: ['Dallas Cowboys', 'Philadelphia Eagles', 'Cleveland Browns', 'Green Bay Packers'],
-            rightAnswer: 3
-        }
-    ]
 }
