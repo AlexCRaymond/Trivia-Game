@@ -9,86 +9,50 @@
     <title>Game</title>
 </head>
 
-<div class="start-page">                                    <!--Start Page-->
-        <h1>Trivia Game</h1>                                <!--Start Page-->
-        <button id="lets-go-button">Let's Go!</button>        <!--Start Page-->
-</div>                                                      <!--Start Page-->
+<div class="start-page">                                    
+    <h1>Trivia Game</h1>                                
+    <button id="lets-go-button">Let's Go!</button>        
+</div>     
 
+<div class="category-choosing-page hide">                   
+    <h1>Welcome to your Favorite Trivia Game!</h1>          
+    <h2>Please choose a category:</h2>                      
 
-<div class="category-choosing-page hide">                   <!--category page-->
-    <h1>Welcome to your Favorite Trivia Game!</h1>          <!--category page-->
-    <h2>Please choose a category:</h2>                      <!--category page-->
+    <div class = "categories">                              
+        <button id="sports-button">Sports</button>                            
+        <button id="entertainment-button">Entertainment</button>              
+        <button id="music-button">Music</button>                              
+        <button id="geography-button">Geography</button>                      
+    </div>                                                                    
+</div>                                                                        
 
-    <div class = "categories">                              <!--category page-->
-        <button id="sports-button">Sports</button>                            <!--category page-->
-        <button id="entertainment-button">Entertainment</button>              <!--category page-->
-        <button id="music-button">Music</button>                              <!--category page-->
-        <button id="geography-button">Geography</button>                      <!--category page-->
-    </div>                                                                    <!--category page-->
-</div>                                                                        <!--category page-->
-
-<div class="sports-difficulty-choosing-page hide">                              <!--sports difficulty choosing page-->
-    <h1>Please select a difficulty level for the upcoming sport questions:</h1><!--sports difficulty choosing page-->
-
-    <div class = "sports-difficulty-level-choice">                       <!--sports difficulty choosing page-->
-            <button id="sports-easy-button">Easy</button>                <!--sports difficulty choosing page-->
-            <button id="sports-medium-button">Medium</button>            <!--sports difficulty choosing page-->
-            <button id="sports-hard-button">Hard</button>                <!--sports difficulty choosing page-->
-    </div>                                                               <!--sports difficulty choosing page-->
-</div>             
-
-<div class="difficulty-choosing-page hide">                       <!--entertainment difficulty choosing page-->
-    <h1 class='difficulty-header'>Please select a difficulty level for the upcoming entertainment questions:</h1><!--entertainment difficulty choosing page-->
-
-    <div class="difficulty-level-choice">                       <!--entertainment difficulty choosing page-->
-            <button id="easy-button">Easy</button>                <!--entertainment difficulty choosing page-->
-            <button id="medium-button">Medium</button>            <!--entertainment difficulty choosing page-->
-            <button id="hard-button">Hard</button>                <!--entertainment difficulty choosing page-->
-    </div>                                                                      <!--entertainment difficulty choosing page-->
-</div>                                                                          <!--entertainment difficulty choosing page-->
+<div class="difficulty-choosing-page hide">                       
+    <h1 class='difficulty-header'></h1>
+    <div class="difficulty-level-choice">                       
+        <button id="easy-button">Easy</button>                
+        <button id="medium-button">Medium</button>            
+        <button id="hard-button">Hard</button>                
+    </div>                                                                      
+</div>                                                                          
   
-
-<div class="music-difficulty-choosing-page hide">                       <!--music difficulty choosing page-->
-    <h1>Please select a difficulty level for the upcoming music questions:</h1><!--music difficulty choosing page-->
-
-    <div class = "music-difficulty-level-choice">                       <!--music difficulty choosing page-->
-            <button id="music-easy-button">Easy</button>                <!--music difficulty choosing page-->
-            <button id="music-medium-button">Medium</button>            <!--music difficulty choosing page-->
-            <button id="music-hard-button">Hard</button>                <!--music difficulty choosing page-->
-    </div>                                                              <!--music difficulty choosing page-->
-</div>  
-
-<div class="geography-difficulty-choosing-page hide">                              <!--geography difficulty choosing page-->
-    <h1>Please select a difficulty level for the upcoming geography questions:</h1><!--geography difficulty choosing page-->
-
-    <div class = "geography-difficulty-level-choice">                       <!--geography difficulty choosing page-->
-            <button id="geography-easy-button">Easy</button>                <!--geography difficulty choosing page-->
-            <button id="geography-medium-button">Medium</button>            <!--geography difficulty choosing page-->
-            <button id="geography-hard-button">Hard</button>                <!--geography difficulty choosing page-->
-    </div>                                                                  <!--geography difficulty choosing page-->
-</div>
-
-<div class="get-ready-page hide">                               <!--get-ready-page-->
-    <h1>Get ready - Click the start button to begin!</h1>       <!--get-ready-page-->
+<div class="get-ready-page hide">                               
+    <h1>Get ready - Click the start button to begin!</h1>       
 
     <div class = "get-ready-page">                                                                 
-            <button id="start-button">START</button>            <!--get-ready-page-->
-                     
-    </div>                                                      <!--get-ready-page-->
+        <button id="start-button">START</button>                     
+    </div>                                                      
 </div>
 
-<div class="game-page hide">                                    <!--game-page-->
-    <h1>TRIVIA!</h1>                                            <!--game-page-->
+<div class="game-page hide">                                    
+    <h1>TRIVIA!</h1>                                            
 
     <div class = "game-page">    
-            <div id="clock">Timer: 10s</div>                    <!--game-page-->                              
-            <div id="question-box"> Question:</div>  
-            <ul id='answers'></ul>
-            <div id="score">Score: 0</div>                      <!--game-page-->                                         
-    </div>                                                      <!--game-page-->
+        <div id="clock">Timer: 10s</div>                                                  
+        <div id="question-box"> Question:</div>  
+        <ul id='answers'></ul>
+        <div id="score">Score: 0</div>                                                               
+    </div>                                                      
 </div>
-
-
 
 <script src= "js/Game.js"></script>
 </html>
