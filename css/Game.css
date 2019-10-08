@@ -5,6 +5,7 @@
 body {
     background-color: green;
 }
+
 h1 {
     text-align: center;
     color: black;
@@ -14,47 +15,29 @@ h1 {
     color:green;
 }
 
-#sports-button {
-    color: green;
+#start-button {
+    display: block;
+    max-width: 300px;
+    margin: auto;
 }
 
-#sports-easy-button {
-    color: green;
+#answers {
+    display: block;
+    max-width: 350px;
+    margin: auto;
 }
 
-#entertainment-button {
-    color: green;
-}
-
-#music-button {
-    color: green;
-}
-
-#geography-button {
-    color: green;
-}
-
-.categories {
-    text-align: center;
+#score {
+    display: block;
+    max-width: 350px;
+    margin: auto;
 }
 
 .start-page {
     text-align: center;
 }
 
-.sports-difficulty-level-choice {
-    text-align: center;
-}
-
-.entertainment-difficulty-level-choice {
-    text-align: center;
-}
-
-.music-difficulty-level-choice {
-    text-align: center;
-}
-
-.geography-difficulty-level-choice {
+.difficulty-level-choice {
     text-align: center;
 }
 
@@ -69,14 +52,6 @@ h1 {
     
 }
 
-#start-button {
-    color: green;
-}
-
-.game-page {
-    
-}
-
 #question-box {
     margin: auto;
     position: relative; 
@@ -87,12 +62,4 @@ h1 {
     display: flex;
     flex-direction: column;
     text-align:center;
-}
-
-#score {
-    position: relative; top: -170px;
-}
-
-#answers {
-    color: black;
 }

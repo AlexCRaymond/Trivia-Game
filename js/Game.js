@@ -135,7 +135,7 @@ const questions = {
             
             {
                 question: "Which is the only team to play in every soccer World Cup tournament?",
-                answers: ['Brazil', 'Argentina', 'Spain', 'Liverpool'],
+                answers: ['Brazil', 'Argentina', 'Spain', 'Germany'],
                 rightAnswer: 0
             },
             
