@@ -14,45 +14,12 @@ $(".difficulty-level-choice").on('click', (e) => {
     game.difficulty = $(e.target).text().toLowerCase()
     $('.difficulty-level-choice').attr('class', 'hide')
     $('.get-ready-page').removeClass('hide')
-    // $('.game-page').attr('class', 'game-page')
 })
-
-
-// $('#sports-button').on('click', () => {
-//     $('.start-page').attr('class','hide')
-//     $('.difficulty-choosing-page').attr('class','difficulty-level-choice')
-//     game.category = 'sports'
-// })
-
-// $('#entertainment-button').on('click', () => {
-//     $('.start-page').attr('class','hide')
-//     $('.difficulty-choosing-page').attr('class', 'difficulty-level-choice')
-//     game.category = 'entertainment'
-// })
-
-// $('#music-button').on('click', () => {
-//     $('.start-page').attr('class','hide')
-//     $('.difficulty-choosing-page').attr('class', 'difficulty-level-choice')
-//     game.category = 'music'
-// })
-
-// $('#geography-button').on('click', () => {
-//     $('.start-page').attr('class','hide')
-//     $('.difficulty-choosing-page').attr('class', 'difficulty-level-choice')
-//     game.category = 'geography'
-// })
-
-// $('#sports-easy-button').on('click', () => {
-//     $('.sports-difficulty-level-choice').attr('class','hide')
-//     $('.get-ready-page').attr('class', 'sports-difficulty-level-choice')
-// })
 
 $('#start-button').on('click', () => {
     $('.get-ready-page').attr('class', 'hide')
     $('.game-page').removeClass('hide')
 })
-
-
 
 const game = {
     time: 10,
@@ -106,7 +73,6 @@ function addQuestion() {
             spentQuestions.push(questions[game.category][game.difficulty][random].question)
             questions[game.category][game.difficulty].splice(random, 1)
             addQuestion()
-            
         })
     }
 }
@@ -137,7 +103,6 @@ const questions = {
                 question: "Who has won more tennis grand slam titles, Venus Williams or Serena Williams?",
                 answers: ['Venus Williams','Serena Williams'],
                 rightAnswer: 1
-            
             },
         ],
 
@@ -159,11 +124,9 @@ const questions = {
                 answers: ['Sloane Stephens', 'Naomi Osaka', 'Coco Gauff', 'Simona Halep'],
                 rightAnswer: 2
             },
-            
         ],
 
-        hard: [
-                
+        hard: [  
             {
                 question: "Which is the only American Football team to go a whole season undefeated, including the Super Bowl?",
                 answers: ['Baltimore Colts', 'Miami Dolphins', 'St. Louis Rams', 'Tennessee Oilers'],
@@ -182,6 +145,5 @@ const questions = {
                 rightAnswer: 3
             }
         ]
-
     }
 }
