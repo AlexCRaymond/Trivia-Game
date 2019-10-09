@@ -39,7 +39,11 @@ const game = {
                 $('#strikes').text(`Strikes: ${game.strikes}`)          
                 clearInterval(this.timer)
                 alert('Whoops! You ran out of time...')
-                addQuestion() // add reset timer
+                addQuestion()
+                game.time = 10
+                $("#clock").text(`Timer: ${game.time}s`);
+                game.setTimer() 
+                
             }
         }, 1000)
     },
@@ -57,7 +61,7 @@ const spentQuestions = []
 
 function missedQuestions() {
     if(game.strikes >= 1) {
-        alert(`Nice game! You got ${game.score} correct! Try Again!`) // how to redirect back to start-page?
+        alert(`Nice game! You got ${game.score} correct! Try Again!`) 
         $('.game-page').addClass('hide')
         $('.start-page').removeClass('hide')
         clearInterval(game.timer)

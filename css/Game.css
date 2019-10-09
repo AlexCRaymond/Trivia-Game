@@ -11,6 +11,10 @@ h1 {
     color: black;
 }
 
+h2 {
+    text-align: center;
+}
+
 #lets-go-button {
     color:green;
 }
@@ -41,6 +45,9 @@ h1 {
 
 .start-page {
     text-align: center;
+}
+.categories {
+    text-align: center
 }
 
 .difficulty-level-choice {
