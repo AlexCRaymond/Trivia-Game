@@ -33,6 +33,12 @@ h1 {
     margin: auto;
 }
 
+#strikes {
+    display: block;
+    max-width: 100px;
+    margin: auto;
+}
+
 .start-page {
     text-align: center;
 }

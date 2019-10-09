@@ -1,32 +1,33 @@
 $('#lets-go-button').on('click', () => {
-    $('.start-page').attr('class','hide')
-    $('.category-choosing-page').attr('class','start-page')
+    $('.start-page').toggleClass('hide')
+    $('.category-choosing-page').removeClass('hide')
 })
 
 $('.categories').on('click',(e) => {
     game.category = $(e.target).text().toLowerCase()
-    $('.start-page').attr('class','hide')
-    $('.difficulty-choosing-page').attr('class','difficulty-level-choice')
+    $('.category-choosing-page').addClass('hide')
+    $('.difficulty-choosing-page').removeClass('hide')
     $('.difficulty-header').text(`Please select a difficulty level for the upcoming ${game.category} questions:`)
 })
 
 $(".difficulty-level-choice").on('click', (e) => {
     game.difficulty = $(e.target).text().toLowerCase()
-    $('.difficulty-level-choice').attr('class', 'hide')
+    $('.difficulty-choosing-page').addClass('hide')
     $('.get-ready-page').removeClass('hide')
 })
 
 $('#start-button').on('click', () => {
-    $('.get-ready-page').attr('class', 'hide')
+    $('.get-ready-page').addClass('hide')
     $('.game-page').removeClass('hide')
 })
 
 const game = {
-    time: 10,
-    timer: null,
     score: 0,
+    time: 3,
+    timer: null,
     category: null,
     difficulty: null,
+    strikes: null,
 
     setTimer() {
         this.timer = setInterval(() => {
@@ -34,7 +35,11 @@ const game = {
             this.time--
             $clock.text(`Timer: ${this.time}s`)
             if(this.time === 0){
+                game.strikes++ 
+                $('#strikes').text(`Strikes: ${game.strikes}`)          
                 clearInterval(this.timer)
+                alert('Whoops! You ran out of time...')
+                addQuestion() // add reset timer
             }
         }, 1000)
     },
@@ -44,27 +49,40 @@ $('#start-button').on('click', (e) => {
     if($(e.target).text() === "START"){
         game.setTimer()
         addQuestion()
+
     }
 })
 
 const spentQuestions = []
 
+function missedQuestions() {
+    if(game.strikes >= 1) {
+        alert(`Nice game! You got ${game.score} correct! Try Again!`) // how to redirect back to start-page?
+        $('.game-page').addClass('hide')
+        $('.start-page').removeClass('hide')
+        clearInterval(game.timer)
+    }
+}
+
 function addQuestion() {
     if(questions[game.category][game.difficulty].length > 0) {
         const random = Math.floor(Math.random() * questions[game.category][game.difficulty].length)
         $('#question-box').text(questions[game.category][game.difficulty][random].question)
-        
+        $('#answers').text('')
         for(let i = 0; i < questions[game.category][game.difficulty][random].answers.length; i++) {
-            let li = `<li><button>${questions[game.category][game.difficulty][random].answers[i]}</button></li>`
+            let li = `<li><button class='answer'>${questions[game.category][game.difficulty][random].answers[i]}</button></li>`
             $('#answers').append(li)
         }
         
-        $('button').on('click', e => {
+        $('.answer').on('click', e => {
             if(questions[game.category][game.difficulty][random].answers.indexOf(e.target.innerText) === questions[game.category][game.difficulty][random].rightAnswer) {
                 game.score+=1
                 $('#score').text(`Score: ${game.score}`)
-                console.log('right!')
+            } else {
+                game.strikes++
+                $('#strikes').text(`Strikes: ${game.strikes}`)
             }
+            
             $('#answers').text('')
             clearInterval(game.timer)
             game.time = 10;
@@ -73,6 +91,7 @@ function addQuestion() {
             spentQuestions.push(questions[game.category][game.difficulty][random].question)
             questions[game.category][game.difficulty].splice(random, 1)
             addQuestion()
+            missedQuestions()
         })
     }
 }
