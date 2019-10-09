@@ -28,7 +28,25 @@ const game = {
     category: null,
     difficulty: null,
     strikes: null,
-
+    
+    resetValues () {
+        window.location.reload();
+        clearInterval(game.timer)
+        game.strikes = 0
+        $('#strikes').text(`Strikes: ${game.strikes}`)
+        game.score = 0
+        $('#score').text(`Score: ${game.score}`)
+        $('.game-page').addClass('hide')
+        $('.start-page').removeClass('hide')
+    },
+    
+    endGame() {
+        if (game.score === 10){
+            alert('Boom, you did it! Well done!')
+            game.resetValues()
+        }
+    },
+    
     setTimer() {
         this.timer = setInterval(() => {
             const $clock = $('#clock')
@@ -55,22 +73,15 @@ $('#start-button').on('click', (e) => {
     if($(e.target).text() === "START"){
         game.setTimer()
         addQuestion()
-
     }
 })
 
 const spentQuestions = []
 
 function missedQuestions() {
-    if(game.strikes >= 3) {
+    if(game.strikes > 2) {
         alert(`Nice game! You got ${game.score} correct! Try Again!`)
-        $('.game-page').addClass('hide')
-        $('.start-page').removeClass('hide')
-        clearInterval(game.timer)
-        game.strikes = 0
-        $('#strikes').text(`Strikes: ${game.strikes}`)
-        game.score = 0
-        $('#score').text(`Score: ${game.score}`)
+        game.resetValues()
     }
 }
 
@@ -102,11 +113,18 @@ function addQuestion() {
             questions[game.category][game.difficulty].splice(random, 1)
             addQuestion()
             missedQuestions()
+            game.endGame()
         })
     }
 }
 
-const questions = {
+// {
+//     question: "",
+//     answers: [],
+//     rightAnswer: 
+// },
+
+let questions = {
     sports: {
         easy: [
             {
@@ -133,6 +151,42 @@ const questions = {
                 answers: ['Venus Williams','Serena Williams'],
                 rightAnswer: 1
             },
+
+            {
+                question: "Which is an example of a 'deuce' in tennis?",
+                answers: ['40-40', '0-0', '30-40', '15-15'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
         ],
 
         medium: [
@@ -153,6 +207,49 @@ const questions = {
                 answers: ['Sloane Stephens', 'Naomi Osaka', 'Coco Gauff', 'Simona Halep'],
                 rightAnswer: 2
             },
+
+            {
+                question: "Which Jamaican sprinter won gold medals at the 100m, 200m and 4 x 100m relay at three consecutive Olympic Games from 2008 - 2016?",
+                answers: ['Tyson Gay', 'Justin Gatlin', 'Usain Bolt', 'Carl Lewis'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "In horse racing, to capture a Triple Crown a horse must win all of the following races EXCEPT for...",
+                answers: ['The Kentucky Derby', 'Preakness Stakes', 'Belmont Stakes', 'Prix de l`Arc de Triomphe'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "Who is the NFL's all-time leading rusher?",
+                answers: ['Walter Payton', 'Emmitt Smith', 'Barry Sanders', 'Frank Gore'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "Which famous golf player was nicknamed `Golden Bear`?",
+                answers: ['Jack Nicklaus', 'Arnold Palmer', 'Tom Watson', 'Gary Player'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+            
         ],
 
         hard: [  
@@ -172,7 +269,49 @@ const questions = {
                 question: "Which American Football team won the first two Super Bowls (in 1967 and 1968)?",
                 answers: ['Dallas Cowboys', 'Philadelphia Eagles', 'Cleveland Browns', 'Green Bay Packers'],
                 rightAnswer: 3
-            }
+            },
+
+            {
+                question: "Which racing driver holds the record for the most Formula One World Drivers' Championship wins, with seven titles?",
+                answers: ['Michael Schumacher', 'Lewis Hamilton', 'Niki Lauda', 'Fernando Alonso'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "Which boxer inflicted Muhammad Ali's first defeat in professional boxing?",
+                answers: ['George Foreman', 'Sonny Liston', 'Rocky Marciano', 'Joe Frazier'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "Who was the only person to have won a Super Bowl as a player, as an assistant coach and as a head coach?",
+                answers: ['Mike Singletary', 'Dick Butkus', 'Mike Ditka', 'Jim Harbaugh'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "When was the first year the three-point shot was introduced to the NBA?",
+                answers: ['1981', '1979', '1965', '1975'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
         ]
     },
     
@@ -263,3 +402,7 @@ const questions = {
         ]
     }
 }
+
+
+
+
