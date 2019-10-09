@@ -40,11 +40,13 @@ const game = {
                 clearInterval(this.timer)
                 alert('Whoops! You ran out of time...')
                 addQuestion()
-                game.time = 10
+                game.time = 3
                 $("#clock").text(`Timer: ${game.time}s`);
                 game.setTimer() 
-                
+            } else {
+                missedQuestions()
             }
+            
         }, 1000)
     },
 }
@@ -60,11 +62,15 @@ $('#start-button').on('click', (e) => {
 const spentQuestions = []
 
 function missedQuestions() {
-    if(game.strikes >= 1) {
-        alert(`Nice game! You got ${game.score} correct! Try Again!`) 
+    if(game.strikes >= 3) {
+        alert(`Nice game! You got ${game.score} correct! Try Again!`)
         $('.game-page').addClass('hide')
         $('.start-page').removeClass('hide')
         clearInterval(game.timer)
+        game.strikes = 0
+        $('#strikes').text(`Strikes: ${game.strikes}`)
+        game.score = 0
+        $('#score').text(`Score: ${game.score}`)
     }
 }
 
