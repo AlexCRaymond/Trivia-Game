@@ -23,7 +23,7 @@ $('#start-button').on('click', () => {
 
 const game = {
     score: 0,
-    time: 3,
+    time: 10,
     timer: null,
     category: null,
     difficulty: null,
@@ -58,7 +58,7 @@ const game = {
                 clearInterval(this.timer)
                 alert('Whoops! You ran out of time...')
                 addQuestion()
-                game.time = 3
+                game.time = 10
                 $("#clock").text(`Timer: ${game.time}s`);
                 game.setTimer() 
             } else {
@@ -159,33 +159,33 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "How many holes are played in a full round of golf?",
+                answers: ['22', '9', '18', '15'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What NFL quarterback was implicated in an illegal interstate dog fighting ring?",
+                answers: ['Peyton Manning', 'Michael Vick', 'Randall Cunningham', 'Tom Brady'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "In volleyball, how many players can be on the floor at any given time for one team?",
+                answers: ['4', '5', '7', '6'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What sports used the term `home run` before baseball?",
+                answers: ['Hockey', 'Cricket', 'Basketball', 'Water Polo'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "A `scrum` is a term associated with what sport?",
+                answers: ['Rugby', 'Football', 'Hockey', 'Golf'],
+                rightAnswer: 0
             },
         ],
 
@@ -233,21 +233,21 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Against what opposing team did Babe Ruth hit his first career home run?",
+                answers: ['Boston Red Sox', 'Chicago Cubs', 'New York Yankees', 'Baltimore Black Sox'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the diameter of a standard basketball hoop in inches?",
+                answers: ['20in', '22in', '16in', '18in'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "How many minutes is a `minor penalty` in hockey?",
+                answers: ['3 minutes', '2 minutes', '4 minutes', '5 minutes'],
+                rightAnswer: 1
             },
             
         ],
@@ -296,21 +296,21 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which MLB pitcher had no right hand?",
+                answers: ['Jim Colborn', 'Stubby Clapp', 'Jim Abbott', 'Guy Hecker'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What country boycotted the 1980 Summer Olympics?",
+                answers: ['Russia', 'France', 'Germany', 'United States'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What’s the second event on day one of a men’s decathlon?",
+                answers: ['Shot Put', 'Long Jump', 'High Jump', 'Discus Throw'],
+                rightAnswer: 1
             },
         ]
     },
