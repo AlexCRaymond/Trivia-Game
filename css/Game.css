@@ -159,19 +159,23 @@ body {
 h1 {
     text-align: center;
     font-size: 40px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'oblique';
     font-size: 72px;
-  background: -webkit-linear-gradient(#389ed5,#ffffff);
-  -webkit-background-clip: text; 
-  -webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(#389ed5,#ffffff);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 
 }
 
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
     font-family: "pacifico";
     color:white;
+}
+
+li {
+    margin: 15px
 }
 
 #lets-go-button {
@@ -282,6 +286,7 @@ h2 {
 
 #answers {
     display: block;
+    padding: 5%;
     max-width: 350px;
     margin: auto;
     color: black;
@@ -397,15 +402,23 @@ h2 {
 }
 
 #score {
+    padding: 5px;
     display: block;
-    max-width: 100px;
+    max-width: 10%;
     margin: auto;
+    font-size: x-large;
+    color: white;
+    font-family: palatino;
 }
 
 #strikes {
+    padding: 5px;
     display: block;
-    max-width: 100px;
+    max-width: 10%;
     margin: auto;
+    font-size: x-large;
+    color: white;
+    font-family: palatino;
 }
 
 .start-page {
@@ -415,18 +428,22 @@ h2 {
 }
 .categories {
     text-align: center;
+    padding: 10%
 }
 
 .difficulty-level-choice {
     text-align: center;
-    font-family: "pacifico"
+    font-family: "pacifico";
+    padding: 10%
 }
 
 #clock {
     margin: auto;
+    font-family: cursive;
+    font-size: x-large;
     color: white;
     height: auto;
-    width: 5rem;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     text-align:center;
@@ -436,12 +453,16 @@ h2 {
 #question-box {
     margin: auto;
     position: relative; 
+    font-family: palatino;
+    font-size: 25px;
+    padding: 10px;
     color: white;
     height: auto;
     width: 35rem;
     display: flex;
     flex-direction: column;
     text-align:center;
+    
 }
 
 #easy-button {

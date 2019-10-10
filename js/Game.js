@@ -155,7 +155,7 @@ let questions = {
 
             {
                 question: "Which is an example of a 'deuce' in tennis?",
-                answers: ['40-40', '0-0', '30-40', '15-15'],
+                answers: ['40-40', '0-0', '30-40', '15-40'],
                 rightAnswer: 0
             },
 
