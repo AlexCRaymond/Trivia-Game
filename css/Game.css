@@ -171,6 +171,7 @@ h2 {
     text-align: center;
     font-size: 30px;
     font-family: "pacifico";
+    color:white;
 }
 
 #lets-go-button {
@@ -283,11 +284,19 @@ h2 {
     display: block;
     max-width: 350px;
     margin: auto;
-    border-color: blue;
     color: black;
-    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
-    transition: all 150ms ease-in-out;
-    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+    font-family: "pacifico"
+   
+}
+
+#answer-button {
+    display: inline-block;
+    font-size: 20px;
+    border-radius: 4px;
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+    cursor: pointer;
 }
 
 #television-button {
@@ -430,7 +439,6 @@ h2 {
     color: white;
     height: auto;
     width: 35rem;
-    border: 0.1rem solid black;
     display: flex;
     flex-direction: column;
     text-align:center;

@@ -24,7 +24,7 @@ $('#start-button').on('click', () => {
 
 const game = {
     score: 0,
-    time: 10,
+    time: 1000,
     timer: null,
     category: null,
     difficulty: null,
@@ -92,7 +92,7 @@ function addQuestion() {
         $('#question-box').text(questions[game.category][game.difficulty][random].question)
         $('#answers').text('')
         for(let i = 0; i < questions[game.category][game.difficulty][random].answers.length; i++) {
-            let li = `<li><button class='answer'>${questions[game.category][game.difficulty][random].answers[i]}</button></li>`
+            let li = `<li><button class='answer' id='answer-button'>${questions[game.category][game.difficulty][random].answers[i]}</button></li>`
             $('#answers').append(li)
         }
         
