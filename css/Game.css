@@ -1,34 +1,390 @@
+
 .hide {
     display: none;
 }
 
 body {
-    background-color: green;
+    min-height: 450px;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
+
 }
+
+.stage {
+    height: 300px;
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0; 
+    left:0;
+    right:0;
+    bottom:0;
+    perspective: 9999px;
+    transform-style: preserve-3d;
+  }
+
+  .layer {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: ಠ_ಠ 5s infinite alternate ease-in-out -7.5s;
+    animation-fill-mode: forwards;
+    transform: rotateY(40deg) rotateX(33deg) translateZ(0);
+  }
+  
+  .layer:after {
+    font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;
+    content: 'TRIVIA!';        /*\A    css!';*/
+    white-space: pre;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    color: whitesmoke;
+    letter-spacing: -2px;
+    text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
+  }
+  
+  .layer:nth-child(1):after {
+    transform: translateZ(0px);
+  }
+  
+  .layer:nth-child(2):after {
+    transform: translateZ(-1.5px);
+  }
+  
+  .layer:nth-child(3):after {
+    transform: translateZ(-3px);
+  }
+  
+  .layer:nth-child(4):after {
+    transform: translateZ(-4.5px);
+  }
+  
+  .layer:nth-child(5):after {
+    transform: translateZ(-6px);
+  }
+  
+  .layer:nth-child(6):after {
+    transform: translateZ(-7.5px);
+  }
+  
+  .layer:nth-child(7):after {
+    transform: translateZ(-9px);
+  }
+  
+  .layer:nth-child(8):after {
+    transform: translateZ(-10.5px);
+  }
+  
+  .layer:nth-child(9):after {
+    transform: translateZ(-12px);
+  }
+  
+  .layer:nth-child(10):after {
+    transform: translateZ(-13.5px);
+  }
+  
+  .layer:nth-child(11):after {
+    transform: translateZ(-15px);
+  }
+  
+  .layer:nth-child(12):after {
+    transform: translateZ(-16.5px);
+  }
+  
+  .layer:nth-child(13):after {
+    transform: translateZ(-18px);
+  }
+  
+  .layer:nth-child(14):after {
+    transform: translateZ(-19.5px);
+  }
+  
+  .layer:nth-child(15):after {
+    transform: translateZ(-21px);
+  }
+  
+  .layer:nth-child(16):after {
+    transform: translateZ(-22.5px);
+  }
+  
+  .layer:nth-child(17):after {
+    transform: translateZ(-24px);
+  }
+  
+  .layer:nth-child(18):after {
+    transform: translateZ(-25.5px);
+  }
+  
+  .layer:nth-child(19):after {
+    transform: translateZ(-27px);
+  }
+  
+  .layer:nth-child(20):after {
+    transform: translateZ(-28.5px);
+  }
+  
+  .layer:nth-child(n+10):after {
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.25);
+  }
+  
+  .layer:nth-child(n+11):after {
+    -webkit-text-stroke: 15px dodgerblue;
+    text-shadow: 6px 0 6px #00366b, 5px 5px 5px #002951, 0 6px 6px #00366b;
+  }
+  
+  .layer:nth-child(n+12):after {
+    -webkit-text-stroke: 15px #0077ea;
+  }
+  
+  .layer:last-child:after {
+    -webkit-text-stroke: 17px rgba(0, 0, 0, 0.1);
+  }
+  
+  .layer:first-child:after {
+    color: #fff;
+    text-shadow: none;
+  }
+  
+  @keyframes ಠ_ಠ {
+    100% {
+      transform: rotateY(-40deg) rotateX(-43deg);
+    }
+  }
 
 h1 {
     text-align: center;
-    color: black;
+    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 72px;
+  background: -webkit-linear-gradient(#389ed5,#ffffff);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+
 }
 
 h2 {
     text-align: center;
+    font-size: 30px;
+    font-family: "pacifico";
 }
 
 #lets-go-button {
-    color:green;
+        position: relative;
+        width: 100%;
+        height: 40px;
+        background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+        border: none;
+        border-radius: 5px;
+        border-bottom: 4px solid #2b8bc6;
+        color: #fbfbfb;
+        font-weight: 600;
+        font-family: 'Open Sans', sans-serif;
+        text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+        font-size: 15px;
+        text-align: center;
+        text-indent: 5px;
+        box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+        cursor: pointer;
+}
+        button:active {                                      /*   making the arrow in the button */
+            box-shadow: 0px 2px 0px 0px rgba(0,0,0,.2);
+            top: 1px;
+          }
+          
+     button:after {
+            content: "";
+            width: 0;
+            height: 0;
+            display: block;
+            border-top: 20px solid #187dbc;
+            border-bottom: 20px solid #187dbc;
+            border-left: 16px solid transparent;
+            border-right: 20px solid #187dbc;
+            position: absolute;
+            opacity: 0.6; 
+            right: 0;
+            top: 0;
+            border-radius: 0 5px 5px 0;  
+                                                
 }
 
 #start-button {
-    display: block;
-    max-width: 300px;
-    margin: auto;
+    
+        display: inline-block;
+        position: absolute;
+        padding: 20px 38px;
+        top: 40%;
+        left: 42%;
+        font-size: 30px;
+        font-family: "pacifico";
+        border-radius: 4px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+        background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+        color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+                cursor: pointer;
+      }
+      
+      button:hover {
+        top: -10px;
+        box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+        
+        -webkit-transform: rotateX(20deg);
+           -moz-transform: rotateX(20deg);
+            -ms-transform: rotateX(20deg);
+                transform: rotateX(20deg);
+      }
+      
+      button:active {
+        top: 0px;
+        box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+        background: rgba( 20, 224, 133, 1 );
+      
+    }
+
+#sports-button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "pacifico";
+    border-radius: 4px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+            cursor: pointer;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+    background: rgba( 20, 224, 133, 1 );
+  
 }
 
 #answers {
     display: block;
     max-width: 350px;
     margin: auto;
+    border-color: blue;
+    color: black;
+    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    transition: all 150ms ease-in-out;
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+
+#television-button {
+    
+        display: inline-block;
+        position: relative;
+        padding: 20px 38px;
+        top: 0;
+        font-size: 30px;
+        font-family: "pacifico";
+        border-radius: 4px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+        background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+        color: rgb(255, 255, 255);
+        box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+                cursor: pointer;
+      }
+      
+      button:hover {
+        top: -10px;
+        box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+        
+        -webkit-transform: rotateX(20deg);
+           -moz-transform: rotateX(20deg);
+            -ms-transform: rotateX(20deg);
+                transform: rotateX(20deg);
+      }
+      
+      button:active {
+        top: 0px;
+        box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+        background: rgba( 20, 224, 133, 1 );
+      
+}
+
+#music-button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "pacifico";
+    border-radius: 4px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+            cursor: pointer;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+    background: rgba( 20, 224, 133, 1 );
+  
+}
+
+#geography-button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "pacifico";
+    border-radius: 4px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+            cursor: pointer;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+    background: rgba( 20, 224, 133, 1 );
+  
 }
 
 #score {
@@ -45,13 +401,16 @@ h2 {
 
 .start-page {
     text-align: center;
+    height: 100vh;
+
 }
 .categories {
-    text-align: center
+    text-align: center;
 }
 
 .difficulty-level-choice {
     text-align: center;
+    font-family: "pacifico"
 }
 
 #clock {
@@ -75,4 +434,100 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align:center;
+}
+
+#easy-button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "pacifico";
+    border-radius: 4px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+            cursor: pointer;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+    background: rgba( 20, 224, 133, 1 );
+  
+}
+
+#medium-button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "pacifico";
+    border-radius: 4px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+            cursor: pointer;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+    background: rgba( 20, 224, 133, 1 );
+  
+}
+
+#hard-button {
+    display: inline-block;
+    position: relative;
+    padding: 20px 38px;
+    top: 0;
+    font-size: 30px;
+    font-family: "pacifico";
+    border-radius: 4px;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 0px rgba( 15, 165, 60, 0.1 );
+            cursor: pointer;
+  }
+  
+  button:hover {
+    top: -10px;
+    box-shadow: 0px 10px 10px rgba( 15, 165, 60, 0.2 );
+    
+    -webkit-transform: rotateX(20deg);
+       -moz-transform: rotateX(20deg);
+        -ms-transform: rotateX(20deg);
+            transform: rotateX(20deg);
+  }
+  
+  button:active {
+    top: 0px;
+    box-shadow: 0px 0px 0px rgba(11, 24, 201, 0);
+    background: rgba( 20, 224, 133, 1 );
+  
 }

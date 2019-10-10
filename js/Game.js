@@ -1,4 +1,5 @@
 $('#lets-go-button').on('click', () => {
+    $('#lets-go-button').toggleClass('hide')
     $('.start-page').toggleClass('hide')
     $('.category-choosing-page').removeClass('hide')
 })
