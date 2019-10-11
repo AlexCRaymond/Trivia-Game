@@ -807,68 +807,68 @@ let questions = {
 
             {
                 question: "What is Earth's largest continent?",
-                answers: ['Asia', ''],
-                rightAnswer: 
+                answers: ['Asia', 'Antartica', 'Africa', 'Europe'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which state is Death Valley located in?",
+                answers: ['Utah', 'Nevada', 'California', 'Texas'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "In which country is the Panama Canal in?",
+                answers: ['Colombia', 'Panama', 'Costa Rica', 'Nicaragua'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which U.S. State is known as the Garden State?",
+                answers: ['California', 'Texas', 'Colorado', 'New Jersey'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What U.S. state is home to Yellowstone National Park?",
+                answers: ['Colorado', 'Wyoming', 'Nebraska', 'Idaho'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which is the largest country in size?",
+                answers: ['Russia', 'United States', 'Canada', 'China'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What island is the Statue of Liberty on?",
+                answers: ['Staten Island', 'Long Island', 'Liberty Island', 'Ellis Island'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "In 1979, Bob was the first one of these to be given a male name. What is it?",
+                answers: ['A baby', 'Hurricane', 'Tornado', 'A car'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "In which U.S. state would you find Mount Rushmore?",
+                answers: ['Oregon', 'Washington', 'North Carolina', 'South Dakota'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Iceland is covered in ice.",
+                answers: ['True', 'False'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which ocean is on the east coast of the United States?",
+                answers: ['Indian Ocean', 'Pacific Ocean', 'Atlantic Ocean', 'Antarctic Ocean'],
+                rightAnswer: 2
             },
         ],
 
@@ -880,69 +880,69 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What country has the most natural lakes?",
+                answers: ['Canada', 'United States', 'India', 'Australia'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What African country served as the setting for Tatooine in Star Wars?",
+                answers: ['Gabon', 'Ghana', 'Tunisia', 'Sudan'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "How many states have a border with Mexico?",
+                answers: ['3','5','6','4'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the tallest mountain in the world?",
+                answers: ['Mount Everest', 'Mount Kilamanjaro', 'Aconcagua', 'Qogir'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the deepest point in Earth's oceans?",
+                answers: ['Java Trench', 'Mariana Trench', 'Tonga Trench', 'Eurasian Basin'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which river flows through the Grand Canyon?",
+                answers: ['James River', 'Hudson River', 'Colorado River', 'Savannah River'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the capital of Costa Rica?",
+                answers: ['Buenos Aires', 'Cartago', 'Lima', 'San José'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the least populated U.S. state?",
+                answers: ['Rhode Island', 'Delaware', 'Wyoming', 'Idaho'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Where is River Thames?",
+                answers: ['Paris, France', 'London, UK', 'Sydney, Australia', 'Delhi, India'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What name does The Dead Sea also go by?",
+                answers: ['The Death Sea', 'Sea of Fish', 'Diabo Sea', 'Sea of Salt'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which country has the longest coastline in the world?",
+                answers: ['Canada', 'United States', 'Austrialia', 'Antartica'],
+                rightAnswer: 0
             },
         ],
 
@@ -951,73 +951,72 @@ let questions = {
                 question: "What river runs through Baghdad?",
                 answers: ['Jordan', 'Euphrates', 'Tigris', 'Karun'],
                 rightAnswer: 2
-           
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the only sea without any coasts?",
+                answers: ['Adriatic Sea', 'Sargasso Sea', 'Mediterranean Sea', 'Celebes Sea'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the driest place on Earth?",
+                answers: ['McMurdo, Antartica', 'Kufra, Libya', 'Atacama Desert', 'Sahara Desert'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the largest lake in the United States?",
+                answers: ['Lake Michigan', 'Lake Huron', 'Lake Erie', 'Lake Superior'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the largest country in South America?",
+                answers: ['Brazil', 'Peru', 'Argentica', 'Chile'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What mountain is nicknamed the 'Savage Mountain'?",
+                answers: ['Matterhorn', 'K2', 'Mount Everest', 'Annapurna'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the fastest flowing river in the world?",
+                answers: ['Congo', 'Yangtze', 'Amazon', 'Mississippi'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "How many countries are in Africa?",
+                answers: ['46', '29', '54', '35'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "North America is the ____ largest country in the world.",
+                answers: ['Second', 'Third', 'Fourth',' Fifth'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which is the most populated city in the world?",
+                answers: ['Tokyo', 'Mexico City', 'Mumbai', 'Beijing'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "How many provinces make up Canada?",
+                answers: ['16', '21', '7', '10'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which is the most abundant metal in the earth's crust?",
+                answers: ['Nickel', 'Aluminum', 'Copper', 'Silicone'],
+                rightAnswer: 1
             },
         ]
     }
