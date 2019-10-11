@@ -141,7 +141,7 @@ let questions = {
             },
             
             {
-                question: "Which of the following athletes is incorrectly matched with his sport?",
+                question: "Which of the following athletes is incorrectly matched with their sport?",
                 answers: ['Michael Jordan - Basketball','Wayne Gretzky - Ice Hockey',
                     'Babe Ruth - Baseball','Muhammad Ali - Football'],
                 rightAnswer: 3
@@ -178,13 +178,13 @@ let questions = {
             },
 
             {
-                question: "What sports used the term `home run` before baseball?",
+                question: "What sport used the term 'home run' before baseball?",
                 answers: ['Hockey', 'Cricket', 'Basketball', 'Water Polo'],
                 rightAnswer: 1
             },
 
             {
-                question: "A `scrum` is a term associated with what sport?",
+                question: "A 'scrum' is a term associated with what sport?",
                 answers: ['Rugby', 'Football', 'Hockey', 'Golf'],
                 rightAnswer: 0
             },
@@ -228,7 +228,7 @@ let questions = {
             },
 
             {
-                question: "Which famous golf player was nicknamed `Golden Bear`?",
+                question: "Which famous golf player was nicknamed 'Golden Bear'?",
                 answers: ['Jack Nicklaus', 'Arnold Palmer', 'Tom Watson', 'Gary Player'],
                 rightAnswer: 0
             },
@@ -246,7 +246,7 @@ let questions = {
             },
 
             {
-                question: "How many minutes is a `minor penalty` in hockey?",
+                question: "How many minutes is a 'minor penalty' in hockey?",
                 answers: ['3 minutes', '2 minutes', '4 minutes', '5 minutes'],
                 rightAnswer: 1
             },
@@ -323,11 +323,65 @@ let questions = {
                 answers: ['Eat my shorts!','What the deuce?','Giggity!','To infinity and beyond!'],
                 rightAnswer: 1
             },
+
+            {
+                question: "In Bewitched, what part of her body does Samantha twitch to practice magic?",
+                answers: ['Her bottom', 'Her ears', 'Her nose', 'Her finger'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "What Seinfeld character takes off his shirt during visits to the toilet?",
+                answers: ['George', 'Elaine', 'Jerry', 'Kramer'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "Which show is a modern take on The Twilight Zone?",
+                answers: ['Twin Peaks', 'Dimension 404', 'Leave it to Beaver', 'Black Mirror'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "This theme song is from what show, 'You're not the boss of me now! You're not the boss of me now! You're not the boss of me now and you're not so big!'",
+                answers: ['Malcolm in the Middle', 'The Office', 'Dark Angel', 'Boy Meets World'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "What is Spiderman's real name?",
+                answers: ['Jim Halpert', 'Tom Haverford', 'Peter Parker', 'Tony Stark'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "Tom Cruise plays the character 'Ethan Hunt' in what film franchise?",
+                answers: ['Lord of the Rings', 'Die Hard', 'Jurassic Park', 'Mission Impossible'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "Who did Vince Vaughn play in 'Fred Claus'?",
+                answers: ['Santa Claus', 'Fred Claus', 'Clyde', 'Willie'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "In the movie 'Elf', where did Buddy live for most of his young life?",
+                answers: ['North America', 'North Pole', 'South Pole', 'Australia'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "Keanu Reeves plays what character in 'The Matrix'?",
+                answers: ['Neo', 'The White Rabbit', 'Morpheus', 'Agent'],
+                rightAnswer: 0
+            },
         ],
 
         medium: [
             {
-                question: "What movie earned Tom Hanks his third straight Oscar nomination, in 1996?",
+                question: "What film earned Tom Hanks his third straight Oscar nomination, in 1996?",
                 answers: ['Apollo 13','Saving Private Ryan', 'Philadelphia', 'That Thing You Do'],
                 rightAnswer: 0
             },
@@ -336,7 +390,56 @@ let questions = {
                 question: "Who played the role of Chandler's father on Friends?",
                 answers: ['Anita Barone', 'Christina Pickles', 'Morgan Fairchild', 'Kathleen Turner'],
                 rightAnswer: 3
-            }
+            },
+
+            {
+                question: "Every episode of Seinfeld contains an image or reference to what superhero?",
+                answers: ['Spiderman', 'Superman', 'Batman', 'The Hulk'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "What was the first American drama series to react to the September 11, 2001 terrorist attacks on the United States?",
+                answers: ['Law and Order', 'Alias', 'The West Wing', 'The Wire'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "What are these character names from, 'Kyle Chandler, Connie Britton, Zach Gilford'?",
+                answers: ['Riverdale', 'Gossip Girl', 'The O.C.', 'Friday Night Lights'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "Woody Harrelson and Matthew McConaughey are cops on a 17-year hunt for a serial killer in what HBO series?",
+                answers: ['The Wire', 'Game of Thrones', 'True Detective', 'Westworld'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "Which 1997 film stars Nicolas Cage, John Cusack, and John Malkovich?",
+                answers: ['Con Air', 'Starship Troopers', 'Face Off', 'The Fifth Element'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "'I see dead people', is a famous line from what film?",
+                answers: ['The Sixth Sense', 'Armageddon', 'Boogie Nights', 'Men in Black'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
         ],
 
         hard: [
@@ -345,6 +448,60 @@ let questions = {
                 answers: ['Nicole Kidman','Whoopie Goldberg', 'Susan Sarandon', 'Meryl Streep'],
                 rightAnswer: 1
            
+            },
+
+            {
+                question: "What television series was the first to air the sound of a toilet being flushed?",
+                answers: ['Married With Children', 'Frasier', 'The Simpsons', 'All in the Family'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "In Arrested Development, What is Buster Bluth's birth name?",
+                answers: ['Brian', 'Buster', 'Byron', 'Bartholomew'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "What year was Forrest Gump released?",
+                answers: ['1992', '1994', '1995', '1996'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "How many movies has Quentin Tarantino directed?",
+                answers: ['7', '8', '9', '10'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "What was the alias name of Kevin Spacey's character in 'The Unusual Suspects'?",
+                answers: ['Verbal Kint', 'Dr. Ford', ' '],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
             },
         ]
     },
