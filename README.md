@@ -1,4 +1,6 @@
-## 2nd Street Trivia! - By Alex Raymond
+## 2nd Street Trivia! - By Alex Raymond 
+
+## Link to 2nd Street Trivia! --- https://alexcraymond.github.io/Trivia-Game/
 
 ## Why Trivia?
 
