@@ -24,7 +24,7 @@ $('#start-button').on('click', () => {
 
 const game = {
     score: 0,
-    time: 1000,
+    time: 15,
     timer: null,
     category: null,
     difficulty: null,
@@ -59,14 +59,14 @@ const game = {
                 clearInterval(this.timer)
                 alert('Whoops! You ran out of time...')
                 addQuestion()
-                game.time = 10
+                game.time = 15
                 $("#clock").text(`Timer: ${game.time}s`);
                 game.setTimer() 
             } else {
                 missedQuestions()
             }
             
-        }, 1000)
+        }, 1500)
     },
 }
 
@@ -107,7 +107,7 @@ function addQuestion() {
             
             $('#answers').text('')
             clearInterval(game.timer)
-            game.time = 10;
+            game.time = 15;
             $("#clock").text(`Timer: ${game.time}s`);
             game.setTimer()
             spentQuestions.push(questions[game.category][game.difficulty][random].question)
