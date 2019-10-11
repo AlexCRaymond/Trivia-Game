@@ -188,6 +188,18 @@ let questions = {
                 answers: ['Rugby', 'Football', 'Hockey', 'Golf'],
                 rightAnswer: 0
             },
+
+            {
+                question: "A touchdown is worth how many points in football?",
+                answers: ['3', '6', '7', '2'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "Actress Gabrielle Union married which NBA player in 2014?",
+                answers: ['Lebron James', 'Kevin Durant', 'Dwayne Wade', 'Steph Curry'],
+                rightAnswer: 2
+            },
         ],
 
         medium: [
@@ -249,6 +261,18 @@ let questions = {
                 question: "How many minutes is a 'minor penalty' in hockey?",
                 answers: ['3 minutes', '2 minutes', '4 minutes', '5 minutes'],
                 rightAnswer: 1
+            },
+
+            {
+                question: "What team did Reggie Miller play for?",
+                answers: ['The Pacers', 'The Heat', 'Philadelphia 76ers', 'Boston Celtics'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "How many gold medals does Michael Phelps have?",
+                answers: ['28', '15', '9', '23'],
+                rightAnswer: 3
             },
             
         ],
@@ -312,6 +336,18 @@ let questions = {
                 question: "What’s the second event on day one of a men’s decathlon?",
                 answers: ['Shot Put', 'Long Jump', 'High Jump', 'Discus Throw'],
                 rightAnswer: 1
+            },
+
+            {
+                question: "Which player graced the cover of the video game 'Madden NFL 17'?",
+                answers: ['Peyton Manning', 'Odell Beckham Jr.', 'Rob Gronkowski', 'Antonia Brown'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "Which NBA player infamously turned down a $21-million contract in 2004 and saw his career end soon afterwards?",
+                answers: ['Allen Iverson', 'Muggsy Bogues', 'Latrell Sprewell', 'Lamar Odom' ],
+                rightAnswer: 2
             },
         ]
     },
@@ -377,6 +413,18 @@ let questions = {
                 answers: ['Neo', 'The White Rabbit', 'Morpheus', 'Agent'],
                 rightAnswer: 0
             },
+
+            {
+                question: "Who plays the character Dexter on the show 'Dexter'?",
+                answers: ['Colin Farrell', 'Michael C. Hall', 'Robert Downey Jr.', 'Bradley Cooper'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "What breed is Snoopy from 'The Peanuts'?",
+                answers: ['Husky', 'Bulldog', 'Poodle', 'Beagle'],
+                rightAnswer: 3
+            },
         ],
 
         medium: [
@@ -438,6 +486,18 @@ let questions = {
                 question: "What was Nicole Polizzi's nickname on 'Jersey Shore'?",
                 answers: ['Grossi', 'Snooki', 'Jen-Ay', 'Tay-Tay'],
                 rightAnswer: 1
+            },
+
+            {
+                question: "What is the name of the fictional ad agency the cast of 'Mad Men' work for?",
+                answers: ['Live Ad Agency', 'Sterling Cooper', '5th Ave. Creative', 'Manhattan Inc.'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "In the show 'Breaking Bad', where does Walter White hide his money in his home?",
+                answers: ['Dryer', 'Basement', 'Closet', 'Heating duct'],
+                rightAnswer: 3
             },
 
         ],
@@ -503,6 +563,18 @@ let questions = {
                 answers: ['Jebediah Springfield', 'Abraham Simpson', 'Hans Springfield', 'Shelbyille Manhattan'],
                 rightAnswer: 0
             },
+
+            {
+                question: "In which season of 'The Big Bang Theory' did Leonard and Penny get married?",
+                answers: ['Season 5', 'Season 9', 'Season 6', 'Season 7'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "Mark Wahlberg is a producer for which television series?",
+                answers: ['Succession', 'The Leftovers', 'Entourage', 'Big Little Lies'],
+                rightAnswer: 3
+            },
         ]
     },
 
@@ -513,6 +585,72 @@ let questions = {
                 answers: ['31','26','27','29'],
                 rightAnswer: 2
             },
+
+            {
+                question: "Who is the lead singer of Pearl Jam?",
+                answers: ['Eddie Vedder', 'Bono', 'Dave Grohl', 'Eric Clapton'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "What genre does Miley Cyrus' dad specialize in?",
+                answers: ['Rap', 'Country', 'Blues', 'Rock'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "Who was the lead singer of the band 'Queen'?",
+                answers: ['David Bowie', 'Paul McCartney', 'George Michael', 'Freddie Mercury'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
         ],
 
         medium: [
@@ -520,6 +658,72 @@ let questions = {
                 question: "How many strings does a violin have?",
                 answers: ['6', '4', '5', '8'],
                 rightAnswer: 1
+            },
+
+            {
+                question: "The musical group 3T are all relatives of which pop musician?",
+                answers: ['Michael Jackson', 'Johnny Cash', 'Elton John', 'Billy Joel'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "Which famous American pop singer was actually born in the State of Hawaii?",
+                answers: ['Justin Bieber', 'Justin Timberlake', 'Taylor Swift', 'Bruno Mars'],
+                rightAnswer: 3
+            },
+
+            {
+                question: "What is the Beatle's number one hit?",
+                answers: ['I Want to Hold Your Hand', 'Help', 'From Me to You', 'She Loves You'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "Which artist did US President George W. Bush once call 'the biggest threat to American youth since polio'?",
+                answers: ['Eminem', 'Snoop Dogg', 'Lil Wayne', 'Nate Dogg'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "What was the highest selling album of the 1980's?",
+                answers: ['Purple Rain', 'Thriller', 'Back in Black', 'Appetite for Destruction'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
             },
         ],
 
@@ -530,15 +734,147 @@ let questions = {
                 rightAnswer: 3
            
             },
+
+            {
+                question: "'The Chainsmokers' and Halsey's 2016 track 'Closer' was inspired by another song by which 1990's rock band?",
+                answers: ['Blink-182', 'Our Lady Peace', 'Nirvana', 'Sound Garden'],
+                rightAnswer: 0
+            },
+
+            {
+                question: "Actor Keanu Reeves was a founding member of the band Dogstar. What position did he play in the band?",
+                answers: ['Drummer', 'Bassist', 'Guitarist', 'Vocalist'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "How old was Avril Lavigne when she signed her first recording contract?",
+                answers: ['14', '18', '16', '21'],
+                rightAnswer: 2
+            },
+
+            {
+                question: "What was the number one US ringtone of 2005?",
+                answers: ['Just a lil Bit', 'Candyshop', 'Soul Survivor', 'Gold Digger'],
+                rightAnswer: 1
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
         ]
     },
 
-    geography: {
+    geography: {    
         easy: [
             {
                 question: "What is the capital of Florida?",
                 answers: ['Miami','Orlando','Tampa Bay','Tallahassee'],
                 rightAnswer: 3
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
             },
         ],
 
@@ -548,6 +884,72 @@ let questions = {
                 answers: ['Mississippi', 'Missouri', 'Yukon', 'Rio Grande'],
                 rightAnswer: 1
             },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
         ],
 
         hard: [
@@ -556,6 +958,72 @@ let questions = {
                 answers: ['Jordan', 'Euphrates', 'Tigris', 'Karun'],
                 rightAnswer: 2
            
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
+            },
+
+            {
+                question: "",
+                answers: [],
+                rightAnswer: 
             },
         ]
     }
