@@ -1,15 +1,16 @@
-## Trivia-Game - By Alex Raymond
+## 2nd Street Trivia! - By Alex Raymond
 
 ## Why Trivia?
 
 * I chose to create a trivia game because...who doesn't like trivia?!  I felt this would be a challenging project but also a lot of fun in creating the format along with the different categories of my choosing.
+* Why the name?  I created the game on 2nd street!
 
 ## Description
-* Welcome to Trivia!  The object of the game is to answer 10 questions correctly without missing more than two.  You have 15 seconds to answer each question before time runs out.  Good luck!
+* Welcome to 2nd Street Trivia!  The object of the game is to answer 10 questions correctly without missing more than two.  You have 15 seconds to answer each question before time runs out.  Good luck!
 
 ## Getting Started
 
-* Start the trivia game by clicking on the 'Let's Go!' button at the bottom.
+* Start 2nd Street Trivia by clicking on the 'Let's Go!' button at the bottom.
 * On the following page the player will choose his/her prefered category out of four different options: Sports, Television, Music or Geography.
 * Next, the player will choose the difficulty level for the upcoming questions.
 * Lastly, the player is brought to a start page and, when ready, will click the 'Start' button to begin.
