@@ -119,12 +119,6 @@ function addQuestion() {
     }
 }
 
-// {
-//     question: "",
-//     answers: [],
-//     rightAnswer: 
-// },
-
 let questions = {
     sports: {
         easy: [
@@ -605,51 +599,51 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which band released the song, 'Hey There Delilah'?",
+                answers: [`Plain White T's`, 'Jason Mraz', 'The All-American Rejects', 'Fall Out Boy'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What was the name of the airplane Buddy Holly died in?",
+                answers: ['Peggy Sue', 'Goodbye', 'American Pie', 'Air Force Fun'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Who sings SexyBack?",
+                answers: ['Usher', 'Justin Timberlake', 'Adam Levine', 'Gwen Stefani'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Who sings Call Me Maybe?",
+                answers: ['Lana Del Rey', 'Taylor Swift', 'Rihanna', 'Carly Rae Jepsen'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What will you hear Katy Perry doing?",
+                answers: ['Roar', 'Scream', 'Shout', 'Howl'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What comes before '...baby one more time'",
+                answers: ['Kiss me', 'Do me', 'Hit me', 'Hold me'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Cyndi Lauper once said, 'Girls just want to...'",
+                answers: ['Kiss boys', 'Be strong', 'Drink', 'Have fun'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What will Lorde never be?",
+                answers: ['Famous', 'Royals', 'Successful', 'Not awkward'],
+                rightAnswer: 1
             },
         ],
 
@@ -691,39 +685,39 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What pop singer is known as 'The Material Girl'?",
+                answers: ['Taylor Swift', 'Christina Aguilera', 'Madonna', 'Britney Spears'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What member of the Red Hot Chili Peppers grew up with Cher as his babysitter?",
+                answers: ['Chad Smith', 'Flea', 'Josh Klinghoffer', 'Anthony Kiedis'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What does Nicki Minaj’s kind of man never do, according to Super Bass?",
+                answers: ['Never sits in first class', 'Never does drugs', 'Never flies coach', 'Never tips'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which country is Gangnam Style from?",
+                answers: ['China', 'South Korea', 'Vietnam', 'Japan'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What part of Shakira’s body doesn’t lie?",
+                answers: ['Hips', 'Lips', 'Eyes', 'Booty'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "'Billie Jean is not my...' what?",
+                answers: ['Friend', 'King', 'Mother', 'Lover'],
+                rightAnswer: 3
             },
         ],
 
@@ -760,45 +754,45 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which rock legend's real name is William Bailey?",
+                answers: ['Axl Rose', 'Slash', 'Johnny Cash', 'Steven Tyler'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which jazz musician was known for playing a bent trumpet?",
+                answers: ['Louis Armstrong', 'Chet Baker', 'Dizzy Gillespie', 'Miles Davis'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What was Bob Marley's song 'I Shot the Sheriff' really about?",
+                answers: ['Cannabis', 'Gun Control', 'The Media', 'Birth Control'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which Beatle performed performed a James Bond theme song?",
+                answers: ['John Lennon', 'Paul McCartney', 'Ringo Starr', 'George Harrison'],
+                rightAnswer: 1
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What is the name of Beyonce’s aggressive onstage alter ego?",
+                answers: ['Monique Rogers', 'Jenny Price', 'Joelle Knight', 'Sasha Fierce'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Presented in January of 2018, who won the Grammy Award for Album of the Year?",
+                answers: ['The Story of O.J. - Jay-Z', 'Humble - Kendrick Lamar', '24K Magic - Bruno Mars', 'Redbone - Childish Gambino'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Which Led Zeppelin song contained the lyrics 'I couldn't get no silver, I couldn't get no gold'?",
+                answers: ['Fool in the Rain', 'No Quarter', 'Gallows Pole', 'Ramble On'],
+                rightAnswer: 2
             },
         ]
     },
@@ -812,8 +806,8 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
+                question: "What is Earth's largest continent?",
+                answers: ['Asia', ''],
                 rightAnswer: 
             },
 
