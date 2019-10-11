@@ -429,15 +429,15 @@ let questions = {
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "'Crazy Eyes' is a character from what Netflix show?",
+                answers: ['Strange Things', 'Ozark', 'Big Mouth', 'Orange is thew New Black'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What was Nicole Polizzi's nickname on 'Jersey Shore'?",
+                answers: ['Grossi', 'Snooki', 'Jen-Ay', 'Tay-Tay'],
+                rightAnswer: 1
             },
 
         ],
@@ -476,32 +476,32 @@ let questions = {
 
             {
                 question: "What was the alias name of Kevin Spacey's character in 'The Unusual Suspects'?",
-                answers: ['Verbal Kint', 'Dr. Ford', ' '],
-                rightAnswer: 
+                answers: ['Verbal Kint', 'Dr. Ford', 'Keyser Soze', 'Hunt Stromberg'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "What time is usually displayed on the clock in Rick's garage in the animated series 'Rick and Morty'?",
+                answers: ['12:00', '5:00', '2:00', '9:00'],
+                rightAnswer: 2
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "In 2006, a former child star from which television show released his own sex-tape?",
+                answers: ['Saved by the Bell', 'The Fresh Prince of Bel-Air', 'Boy Meets World', 'Full House'],
+                rightAnswer: 0
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Oceanic Airlines Flight 815, of 'Lost', was en route to Los Angeles from which departure point?",
+                answers: ['New York', 'France', 'Chicago', 'Australia'],
+                rightAnswer: 3
             },
 
             {
-                question: "",
-                answers: [],
-                rightAnswer: 
+                question: "Who founded the city of Springfield in 'The Simpsons'?",
+                answers: ['Jebediah Springfield', 'Abraham Simpson', 'Hans Springfield', 'Shelbyille Manhattan'],
+                rightAnswer: 0
             },
         ]
     },
