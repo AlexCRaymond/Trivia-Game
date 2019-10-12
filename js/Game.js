@@ -772,7 +772,7 @@ let questions = {
             },
 
             {
-                question: "Which Beatle performed performed a James Bond theme song?",
+                question: "Which Beatle performed a James Bond theme song?",
                 answers: ['John Lennon', 'Paul McCartney', 'Ringo Starr', 'George Harrison'],
                 rightAnswer: 1
             },
