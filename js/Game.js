@@ -567,7 +567,7 @@ let questions = {
             {
                 question: "Mark Wahlberg is a producer for which television series?",
                 answers: ['Succession', 'The Leftovers', 'Entourage', 'Big Little Lies'],
-                rightAnswer: 3
+                rightAnswer: 2
             },
         ]
     },
